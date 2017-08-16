@@ -12,7 +12,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
     mode: 'history',
-    base: '/',
+    base: '/News-WebApp-With-Vue', // Routing Main Entry URL
     routes: [
         { path: '/', component: Sources },
         { path: '/news/:id', component: News },

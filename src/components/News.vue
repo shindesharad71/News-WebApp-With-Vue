@@ -32,7 +32,7 @@ export default {
     axios.get('https://newsapi.org/v1/articles', {
     params: {
 			source: this.$route.params.id,
-			apiKey: '194d633ccf6846c98bfb420d693f2446' // NewsAPI.org API Key Here
+			apiKey: 'API Key' // Add NewsAPI.org API Key Here
     }
 		})
 		.then((response) => {
