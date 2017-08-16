@@ -8,11 +8,15 @@ A Vue.js project
 
 ### Steps For Installation & Use
 
-* Get *API Key* from *NewsAPI.org*
-
 * Download / Clone Repository
 
+* Get *API Key* from *NewsAPI.org*
+
 * Go To Repository Folder.
+
+* Put API Key in ```News.vue``` file.
+
+* Set Base Url in ```main.js``` file.
 
 * Run ```npm install``` to install packages.
 
