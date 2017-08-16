@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-md-3" v-for="item in list">
         <router-link :to="'/news/'+item.link">
@@ -12,7 +12,6 @@
         </router-link>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -51,5 +50,8 @@ export default {
 </script>
 
 <style scoped>
-
+a {
+  text-decoration: none;
+  color: #000;
+}
 </style>
