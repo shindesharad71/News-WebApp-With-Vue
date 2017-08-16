@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <router-link to="/footer" active-class="active" class="nav-link" tag="a">Footer</router-link>
+        <router-link to="/about" active-class="active" class="nav-link" tag="a"><i class="fa fa-user" aria-hidden="true"></i> About</router-link>
       </li>
     </ul>
   </div>

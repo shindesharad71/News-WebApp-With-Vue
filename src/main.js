@@ -5,7 +5,8 @@ import App from './App.vue'
 // Components For Routes
 import Sources from './components/Sources.vue'
 import News from './components/News.vue'
-import Footer from './components/Footer.vue'
+import About from './components/About.vue'
+import View from './components/View.vue'
 
 Vue.use(VueRouter);
 
@@ -15,7 +16,8 @@ const router = new VueRouter({
     routes: [
         { path: '/', component: Sources },
         { path: '/news/:id', component: News },
-        { path: '/footer', component: Footer }
+        { path: '/about', component: About },
+        { path: '/show/:cat/:url', name: 'show', component: View }
     ]
 });
 

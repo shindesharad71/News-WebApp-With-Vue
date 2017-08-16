@@ -33,6 +33,10 @@ export default {
   margin-bottom: 40px;
 }
 
+.arrange {
+	margin-bottom: 40px; 
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
