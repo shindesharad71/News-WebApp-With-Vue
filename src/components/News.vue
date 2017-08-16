@@ -1,17 +1,12 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-6" v-for="news in collection">
+      <div class="col-sm-3 arrange" v-for="news in collection">
         <router-link :to="'/show/'+news.url">
-          <div class="card border-primary mb-3">
-            <div class="card-body">
-							<div class="col-md-2">
-								<img class="" :src="news.urlToImage" alt="news.title">
-							</div>
-							<div class="col-md-4">
-								<h6 class="card-title">{{ news.title }}</h6>
-								<p class="card-text">{{ news.title }}</p>
-							</div>
+          <div class="card border-primary">
+						<img class="card-img-top" :src="news.urlToImage" alt="news.title">
+            <div class="card-body">	
+							<h6 class="card-title">{{ news.title }}</h6>
             </div>
           </div>
         </router-link>
@@ -36,12 +31,19 @@ export default {
 			apiKey: '194d633ccf6846c98bfb420d693f2446' // NewsAPI.org API Key Here
     }
 		})
-		.then(function (response) {
-			this.collection = response.data;
+		.then((response) => {
+			console.log(response.data.articles);
+			return this.collection = response.data.articles;
 		})
-		.catch(function (error) {
+		.catch((error) => {
 			console.log(error);
 		});
   }
 }
 </script>
+
+<style scoped>
+.arrange {
+	margin-bottom: 40px; 
+}
+</style>
