@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-3" v-for="item in list">
-        <div class="card">
-          <img class="card-img-top" :src="item.img" alt="item.title">
-          <div class="card-body">
-              <h4 class="card-title">{{ item.title }}</h4>
+        <router-link :to="'/news/'+item.link">
+          <div class="card">
+            <img class="card-img-top" :src="item.img" alt="item.title">
+            <div class="card-body">
+                <h4 class="card-title">{{ item.title }}</h4>
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
     
@@ -41,6 +43,9 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    
   }
 }
 </script>
