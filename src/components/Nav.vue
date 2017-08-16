@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <router-link to="/" class="navbar-brand" tag="a">News</router-link>
+  <router-link to="/" class="navbar-brand" tag="a"><i class="fa fa-2x fa-newspaper-o" aria-hidden="true"></i> News</router-link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

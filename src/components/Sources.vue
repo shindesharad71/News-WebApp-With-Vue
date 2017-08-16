@@ -37,7 +37,7 @@ export default {
         },
         {
           title: 'ABC News (AU)',
-          link: 'abc-news-au',
+          link: 'abc-news-ag',
           img: 'http://mobile.abc.net.au/cm/cb/4355924/News+iOS+120x120/data.png'
         }
       ]

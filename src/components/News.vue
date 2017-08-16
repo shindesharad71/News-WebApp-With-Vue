@@ -1,12 +1,15 @@
 <template>
   <div class="container">
     <div class="row">
+			<div class="loader" v-show="loading">
+				<i class="fa fa-2x fa-spinner fa-spin"></i>
+			</div>
       <div class="col-sm-3 arrange" v-for="news in collection">
         <router-link :to="'/show/'+news.url">
-          <div class="card border-primary">
+          <div class="card border-dark mb-3">
 						<img class="card-img-top" :src="news.urlToImage" alt="news.title">
             <div class="card-body">	
-							<h6 class="card-title">{{ news.title }}</h6>
+							<h5 class="card-title">{{ news.title }}</h5>
             </div>
           </div>
         </router-link>
@@ -21,6 +24,7 @@ import axios from 'axios'
 export default {
   data () {
 		return {
+			loading: true,
 			collection: []
 		}
 	},
@@ -38,6 +42,7 @@ export default {
 		.catch((error) => {
 			console.log(error);
 		});
+		this.loading = false;
   }
 }
 </script>
@@ -45,5 +50,14 @@ export default {
 <style scoped>
 .arrange {
 	margin-bottom: 40px; 
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.loader {
+	margin-top: 150px;
 }
 </style>
