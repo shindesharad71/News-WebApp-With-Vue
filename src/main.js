@@ -11,8 +11,8 @@ import View from './components/View.vue'
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-    mode: 'history',
-    base: '/News-WebApp-With-Vue', // Routing Main Entry URL
+    mode: 'hash',
+    base: '/', // Routing Main Entry URL
     routes: [
         { path: '/', component: Sources },
         { path: '/news/:id', component: News },
